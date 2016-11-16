@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'waxmanrentasfinal',
-			'username'  => 'waxmanrentasfina',
-			'password'  => 'waxmanrentasfinal',
+			'database'  => 'proyectoweb',
+			'username'  => 'proyectoweb',
+			'password'  => 'proyectoweb',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
