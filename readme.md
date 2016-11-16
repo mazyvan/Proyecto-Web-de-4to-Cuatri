@@ -10,7 +10,7 @@
   4. Crear un usuario, inician en la terminal como root y ejecutan (Copian y pegan) -> GRANT ALL PRIVILEGES ON proyectoweb.* TO 'proyectoweb'@'localhost' IDENTIFIED BY 'proyectoweb' WITH GRANT OPTION;
   5. Recargan los privilegios del usuario con el comando -> FLUSH PRIVILEGES;
   6. Luego copian este repositorio: van a la carpeta de sus documentos o escritorio o la que quieran y le dan click derecho en un lugar solo y dan click donde dice Git Bash Here (si no aparece reinician la compu para que git agarre chido ;) )
-  7. Ya que agarre chido, se va a abrir git con la ruta donde estan. ahi hay que poner git clone https://github.com/mazyvan/Proyecto-Web-de-4to-Cuatri (para clonar el repositorio)
+  7. Ya que agarre chido, se va a abrir git con la ruta donde estan. ahi hay que poner -> git clone https://github.com/mazyvan/Proyecto-Web-de-4to-Cuatri (para clonar el repositorio)
   8. Si estan perros y les jala todo el rollo hasta aqui les debe crear una carpeta llamada -> Proyecto-Web-de-4to-Cuatri
   9. Sin salirse de Git escriben y dan enter -> cd Proyecto-Web-de-4to-Cuatri
   10. Despues escriben y luego enter -> composer install   (Se va a tardar un ratillo en sus compus chafas(8 , mientras van por papas o algo)
