@@ -7,7 +7,7 @@
   1. Tener instalado [Git](https://git-scm.com/download/win), lo descargan del link y le dan siguiente, siguiente, etc...
   2. Instalan [Composer](https://getcomposer.org/Composer-Setup.exe) también porfa.
   3. Crear una base de datos llamada -> proyectoweb
-  4. Crear un usuario, inician en la terminal como root y ejecutan (Copian y pegan) -> GRANT ALL PRIVILEGES ON proyectoweb.* TO 'proyectoweb'@'localhost' IDENTIFIED BY 'proyectoweb' WITH GRANT OPTION;
+  4. Crear un usuario, inician en la terminal como root y ejecutan (Copian y pegan) -> ** GRANT ALL PRIVILEGES ON proyectoweb.* TO 'proyectoweb'@'localhost' IDENTIFIED BY 'proyectoweb' WITH GRANT OPTION; **
   5. Recargan los privilegios del usuario con el comando -> FLUSH PRIVILEGES;
   6. Luego copian este repositorio: van a la carpeta de sus documentos o escritorio o la que quieran y le dan click derecho en un lugar solo y dan click donde dice Git Bash Here (si no aparece reinician la compu para que git agarre chido ;) )
   7. Ya que agarre chido, se va a abrir git con la ruta donde estan. ahi hay que poner -> git clone https://github.com/mazyvan/Proyecto-Web-de-4to-Cuatri (para clonar el repositorio)
