@@ -16,7 +16,7 @@ _Nota: lo que esta en **regrita** son comandos_
   10. Despues escriben y luego enter -> **composer install**   (Se va a tardar un ratillo en sus compus chafas(8 , mientras van por papas o algo)
   11. Cuando termine ponen -> **php artisan migrate** (eso es para que artisan cree las tablas por ustedes por que somos webones)
   11. Cuando termine ponen -> **php artisan serve**
-  12. No cierren la terminal Git y van a [MIT license](http://localhost:8000)
+  12. No cierren la terminal Git y van a [localhost:8000](http://localhost:8000)
   13. Avedaaa :3
 
 Para que deje de funcionar cierran la terminal o ponen dan Control C y siempre que quieran que corra tienen que estar en esa carpeta y usar **php artisan serve**
