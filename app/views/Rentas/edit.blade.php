@@ -56,7 +56,7 @@
 								<option value="0">No</option>
 							@else
 								<option value="1">Sí</option>
-								<option value="1">No hay suficientes productos para reactivar esta renta</option>
+								<option value="1">No hay suficientes libros para reactivar esta renta</option>
 							@endif
 							
 						@else

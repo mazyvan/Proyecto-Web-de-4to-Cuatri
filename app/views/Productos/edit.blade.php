@@ -2,7 +2,7 @@
 @section ('body')
 	<div class="container col-md-8 col-md-offset-2">
 		<div class="jumbotron">
-			<form method="POST" action="{{ url('/productos/edit',$producto->id) }}"> 
+			<form method="POST" action="{{ url('/libros/edit',$producto->id) }}"> 
 				<h1>Editar Producto</h1>
 				<br>
 				<label>Nombre</label><br>
@@ -18,12 +18,12 @@
 					<input value="{{$producto->precio_compra}}" class="form-control" type="number" step="0.01" min="0" placeholder="Precio de Compra" name="precio_compra" required>
 				</div>
 				<div class="form-group">
-					<label>Color</label><br>
-					<input value="{{$producto->color}}" class="form-control" type="text" placeholder="Color" name="color">
+					<label>Genero</label><br>
+					<input value="{{$producto->genero}}" class="form-control" type="text" placeholder="Genero" name="genero">
 				</div>
 				<div class="form-group">
-					<label>Talla</label><br>
-					<input value="{{$producto->talla}}" class="form-control" type="text" placeholder="Talla" name="talla">
+					<label>Autor</label><br>
+					<input value="{{$producto->autor}}" class="form-control" type="text" placeholder="Autor" name="autor">
 				</div>
 				<div class="form-group">
 					<label>Cantidad</label><br>

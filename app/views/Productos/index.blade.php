@@ -3,13 +3,13 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-sm-5">
-			<h1>Sistema Trajes</h1>
+			<h1></h1>
 		</div>
 		<div class="col-sm-4">
 			<br>
 			<br>
 			<div class="col-sm-9">
-				<input type="text" onkeypress="return runScript(event)" placeholder="Buscar Producto" class="form-control" ng-model="search.producto">
+				<input type="text" onkeypress="return runScript(event)" placeholder="Buscar Libro" class="form-control" ng-model="search.producto">
 				<script type="text/javascript">
 				function runScript(e) {
 				    if (e.keyCode == 13) {
@@ -20,14 +20,14 @@
 				</script>
 			</div>
 			<div class="col-sm-3">
-				<a id="search-producto" class="btn btn-info" href='{{ url("/productos") }}/@{{search.producto}}'>Buscar</a>
+				<a id="search-producto" class="btn btn-info" href='{{ url("/libros") }}/@{{search.producto}}'>Buscar</a>
 			</div>
 		</div>
 		<div class="col-sm-2">
 			<br>
 			<br>
 			<div class="col-md-offset-3">
-				<a href="{{ url('/productos/create') }}" class="btn btn-success">Agregar Producto</a>
+				<a href="{{ url('/libros/create') }}" class="btn btn-success">Agregar Libro</a>
 			</div>
 		</div>
 		</div>
@@ -41,7 +41,7 @@
 				<a href="{{ url('/clientes') }}" class="btn btn-primary btn-lg btn-block">Clientes</a>
 			</div><br>
 			<div class="row">
-				<a href="{{ url('/productos') }}" class="btn btn-primary btn-lg btn-block active">Productos</a>
+				<a href="{{ url('/libros') }}" class="btn btn-primary btn-lg btn-block active">Libros</a>
 			</div><br>
 			
 		</div>
@@ -53,8 +53,8 @@
 					
 						<th>Nombre</th>
 						<th>Precio de Compra</th>
-						<th>Color</th>
-						<th>Talla</th>
+						<th>Genero</th>
+						<th>Autor</th>
 						<th>Disponibles</th>
 						<th>En renta</th>
 						<th>Descripción</th>
@@ -66,8 +66,8 @@
 						<tr>
 							<td>{{ $producto ->nombre }}</td>
 							<td>$ {{ $producto ->precio_compra }}</td>
-							<td>{{ $producto ->color }}</td>
-							<td>{{ $producto ->talla }}</td>
+							<td>{{ $producto ->genero }}</td>
+							<td>{{ $producto ->autor }}</td>
 							<td>{{ $producto ->cantidad - $producto ->no_rentas}}</td>
 							<td>{{ $producto ->no_rentas }}</td>
 							<td>
@@ -92,8 +92,8 @@
 							    </div><!-- /.modal-dialog -->
 							</div><!-- /.modal -->
 							<td>
-							<a class="btn btn-warning btn-sm"href="{{ url('/productos/edit',$producto->id) }}">Editar</a>
-							<a class="btn btn-danger btn-sm" href="{{ url('/productos/destroy',$producto->id) }}">Eliminar</a>
+							<a class="btn btn-warning btn-sm"href="{{ url('/libros/edit',$producto->id) }}">Editar</a>
+							<a class="btn btn-danger btn-sm" href="{{ url('/libros/destroy',$producto->id) }}">Eliminar</a>
 							</td>
 						</tr>
 					@endforeach

@@ -9,8 +9,8 @@ class ProductoController extends \BaseController {
 		orWhere('nombre', 'LIKE', '%'.$search.'%')->
 		orWhere('descripcion', 'LIKE', '%'.$search.'%')->
 		orWhere('precio_compra', 'LIKE', '%'.$search.'%')->
-		orWhere('color', 'LIKE', '%'.$search.'%')->
-		orWhere('talla', 'LIKE', '%'.$search.'%')->
+		orWhere('genero', 'LIKE', '%'.$search.'%')->
+		orWhere('autor', 'LIKE', '%'.$search.'%')->
 		orderBy('id','DESC')->get();
 		
         return View::make('Productos.index')->with('productos',$productos);
@@ -53,11 +53,11 @@ class ProductoController extends \BaseController {
 		$producto->nombre = Input::get('nombre');
 		$producto->descripcion = Input::get('descripcion');
 		$producto->precio_compra = Input::get('precio_compra');
-		$producto->color = Input::get('color');
-		$producto->talla = Input::get('talla');
+		$producto->genero = Input::get('genero');
+		$producto->autor = Input::get('autor');
 		$producto->cantidad = Input::get('cantidad');
 		$producto->save();
-		return Redirect::to('productos');
+		return Redirect::to('libros');
 	}
 
 
@@ -99,12 +99,12 @@ class ProductoController extends \BaseController {
 		$producto->nombre = Input::get('nombre');
 		$producto->descripcion = Input::get('descripcion');
 		$producto->precio_compra = Input::get('precio_compra');
-		$producto->color = Input::get('color');
-		$producto->talla = Input::get('talla');
+		$producto->genero = Input::get('genero');
+		$producto->autor = Input::get('autor');
 		$producto->cantidad = Input::get('cantidad');
 		$producto->save();
 		
-		return Redirect::to('productos');
+		return Redirect::to('libros');
 	}
 
 
@@ -120,7 +120,7 @@ class ProductoController extends \BaseController {
 		$producto = Producto::find($id);
 		$producto->delete();
 
-		return Redirect::to('productos');
+		return Redirect::to('libros');
 	}
 
 

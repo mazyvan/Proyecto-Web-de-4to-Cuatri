@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-sm-5">
-			<h1>Sistema Trajes</h1>
+			<h1></h1>
 		</div>
 		<div class="col-sm-4">
 			<br>
@@ -41,7 +41,7 @@
 				<a href="{{ url('/clientes') }}" class="btn btn-primary btn-lg btn-block active">Clientes</a>
 			</div><br>
 			<div class="row">
-				<a href="{{ url('/productos') }}" class="btn btn-primary btn-lg btn-block">Productos</a>
+				<a href="{{ url('/libros') }}" class="btn btn-primary btn-lg btn-block">Libros</a>
 			</div><br>
 			
 		</div>

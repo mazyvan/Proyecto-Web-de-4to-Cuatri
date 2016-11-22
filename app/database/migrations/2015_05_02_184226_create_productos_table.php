@@ -17,8 +17,8 @@ class CreateProductosTable extends Migration {
             $table->string('nombre', 30);
             $table->text('descripcion');
             $table->float('precio_compra');
-            $table->string('color', 30);
-            $table->string('talla', 30);
+            $table->string('genero', 30);
+            $table->string('autor', 30);
             $table->integer('no_rentas');
             $table->integer('cantidad');
             $table->timestamps();
